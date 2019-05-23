@@ -13,7 +13,7 @@ from scipy.stats import ttest_rel
 from sklearn.metrics import roc_auc_score, roc_curve, auc, precision_score, recall_score
 from sklearn.preprocessing import LabelEncoder#, OneHotEncoder
 
-df_fcm = pd.read_excel('Results/Proper_gating_LPO_PRED_probaStrat_test_GMM_RFR_CLASS_L400_asinh.xlsx', index_col=0, header=0)
+df_fcm = pd.read_excel('Results/FCM_LPO_PRED_probaStrat_test_GMM_RFR_CLASS_L400.xlsx', index_col=0, header=0)
 df_16S = pd.read_excel('Results/16S_LPO_PRED_probaStrat_test_RFR_CLASS_L400.xlsx', index_col=0, header=0)
 
 target = pd.read_csv('Metadata_DC.csv', index_col=0, header=0)
@@ -138,6 +138,6 @@ median_auc_16S_avg = np.median(auc_16S_avg)
 
 results_fcm = pd.DataFrame({'Precision':prec_fcm,'Recall':rec_fcm,'AUC':auc_fcm_avg})
 results_16S = pd.DataFrame({'Precision':prec_16S,'Recall':rec_16S,'AUC':auc_16S_avg})
-results_fcm.to_excel('Results/FCM_LPO_Results_test_Strat_GMM_RFR_CLASS_L400_asinh.xlsx')
-results_16S.to_excel('Results/16S_LPO_Results_test_Strat_RFR_CLASS_L400_asinh.xlsx')
+results_fcm.to_excel('Results/FCM_LPO_Results_test_Strat_GMM_RFR_CLASS_L400_AUC.xlsx')
+results_16S.to_excel('Results/16S_LPO_Results_test_Strat_RFR_CLASS_L400_AUC.xlsx')
  

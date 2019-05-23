@@ -18,9 +18,9 @@ import warnings
 warnings.simplefilter(action = "ignore", category = FutureWarning)
 sns.set_style("ticks")
 
-df_fcm = pd.read_excel('Results/FCM_LPO_Results_test_Strat_GMM_RFR_CLASS_L400_asinh.xlsx')
+df_fcm = pd.read_excel('Results/FCM_LPO_Results_test_Strat_GMM_RFR_CLASS_L400_AUC.xlsx')
 df_fcm['Analysis'] = 'Flow cytometry'
-df_16S = pd.read_excel('Results/16S_LPO_Results_test_Strat_RFR_CLASS_L400.xlsx')
+df_16S = pd.read_excel('Results/16S_LPO_Results_test_Strat_RFR_CLASS_L400_AUC.xlsx')
 df_16S['Analysis'] = '16S sequencing' 
 df = pd.concat([df_fcm,df_16S], axis=0)
 
