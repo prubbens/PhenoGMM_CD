@@ -19,6 +19,15 @@ To plot the resulting AUROC-values, run the script [plot_Fig1C_AUCtest.py](https
 The second jupyter notebook can be use to determine the *cytometric* diversity (based on flow cytometry data) and the *taxonomic* diversity, based on 16S rRNA gene sequencing data. Running the notebook will assess the statistical correspondence between the cytometric and taxonomic diversity, and assess the null hypothesis that the diversity of communitie diagnosed with Crohn's disease belong to the same population as those that belong to the Healthy Control group. 
 - [https://github.com/prubbens/PhenoGMM_CD/blob/master/CD_vs_HC_diversity_analysis.ipynb](https://github.com/prubbens/PhenoGMM_CD/blob/master/CD_vs_HC_diversity_analysis.ipynb)
 
+### Requirements to run notebooks: 
+- Python 3
+- Numpy
+- Pandas
+- Scikit-Learn
+- Scipy
+- Seaborn
+- Statsmodels
+
 ### Data availability: 
 All data is available on this repository. 
   - Denoised FCM data in `CSV`-format can be found in the folder [QC_flowAI_CSV](https://github.com/prubbens/PhenoGMM_CD/tree/master/QC_flowAI_CSV). Data was cleaned by means of the [flowAI](https://academic.oup.com/bioinformatics/article/32/16/2473/2240408) package. 
