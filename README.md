@@ -21,16 +21,9 @@ The second jupyter notebook can be use to determine the *cytometric* diversity (
 
 ### Data availability: 
 All data is available on this repository. 
-  - Denoised FCM data can be found in the folder [QC_flowAI_CSV](https://github.com/prubbens/PhenoGMM_CD/tree/master/QC_flowAI_CSV). Data was cleaned by means of the [flowAI](https://academic.oup.com/bioinformatics/article/32/16/2473/2240408) package. 
-  - Raw FCM data can be found on FlowRepository (ID:FR-FCM-ZYVH). 
+  - Denoised FCM data in `CSV`-format can be found in the folder [QC_flowAI_CSV](https://github.com/prubbens/PhenoGMM_CD/tree/master/QC_flowAI_CSV). Data was cleaned by means of the [flowAI](https://academic.oup.com/bioinformatics/article/32/16/2473/2240408) package. 
+  - Preprocessed FCM data in `FCS`-format can be found on FlowRepository (ID:FR-FCM-ZYVH). 
   - Genus abundances can be found in the folder [Genus_tables](https://github.com/prubbens/PhenoGMM_CD/tree/master/Genus_tables). It's also available as Supporting Information to the original publication by [Vandeputte et al., (2017)](https://www.nature.com/articles/nature24460). 
   
 ### A note on the background removal: 
-Upon inspection of the flow cytometry data, three groups can be detected. 
-- Left bottom: (in)organic noise. 
-- Left top: (in)noise. 
-- Right: bacterial community. 
-
-To make sure this conclusion holds, we created two visualizations. Figure A contains the gate that allows to extract the bacterial community. We visualized the cells inside the gate in red in multiple bivariate histograms. This shows that this group of cells stays outside the region of background noise. 
-
-Figure B contains the gate that extracts the noise on the top left. Upon inspection of the same 
+We carefully gated our data. An [illustration](https://github.com/prubbens/PhenoGMM_CD/blob/master/Gating/gating_strat_1_truecomm.pdf) of the gating template can be found here, an explanation with illustrations can be found in the folder [Gating](https://github.com/prubbens/PhenoGMM_CD/tree/master/Gating). 
