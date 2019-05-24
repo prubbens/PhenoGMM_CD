@@ -35,4 +35,4 @@ All data is available on this repository.
   - Genus abundances can be found in the folder [Genus_tables](https://github.com/prubbens/PhenoGMM_CD/tree/master/Genus_tables). It's also available as Supporting Information to the original publication by [Vandeputte et al., (2017)](https://www.nature.com/articles/nature24460). 
   
 ### A note on the background removal: 
-We carefully gated our data. An [illustration](https://github.com/prubbens/PhenoGMM_CD/blob/master/Gating/gating_strat_1_truecomm.pdf) of the gating template can be found here, an explanation with illustrations can be found in the folder [Gating](https://github.com/prubbens/PhenoGMM_CD/tree/master/Gating). 
+We carefully removed the noise from our data. An [illustration](https://github.com/prubbens/PhenoGMM_CD/blob/master/Gating/gating_strat_1_truecomm.pdf) of the gating template can be found here, an explanation with illustrations can be found in the folder [Gating](https://github.com/prubbens/PhenoGMM_CD/tree/master/Gating). 
